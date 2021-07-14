@@ -1,165 +1,263 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap");
 
-body{font-family: 'Poppins', sans-serif;
-    margin: 0;
-
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  position: relative;
 }
 /*------------------------
      HEADER SECTION 
 ------------------------------*/
 /* Manu Bar */
-
-.top-sub-container{
-    padding: 40px 40px 40px 150px ;
-    height: 600px;
-    background-color: #2D25A0;
-}
-.manu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-
-}
-.manu-left ul{
-    display: flex;
-    padding: 0;
-   
-}
-.manu-left ul li{
-    
-    list-style: none;
-    margin-right: 30px;   
-}
-
-.manu-left ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
+nav{position: sticky;
     
 }
-.manu-right{
-    color:white;
-    background-color: #E02C6D;
-    padding: 10px 30px;
-   
-}
-.manu-right span{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
 
+.top-sub-container {
+  padding: 20px 100px ;
+  height: 600px;
+  background-color: #2d25a0;
+}
+.manu {
+    padding: 20px 100px;
+    background-color: #2d25a0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+    top: 0px;
+}
+.manu-left ul {
+  display: flex;
+  padding: 0;
+}
+.manu-left ul li {
+  list-style: none;
+  margin-right: 30px;
 }
 
-/* Manu title And Image */
+.manu-left ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+.manu-right {
+  color: white;
+  background-color: #e02c6d;
+  padding: 10px 30px;
+}
+.manu-right span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
 
-.item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
+/* banner title And Image */
 
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
-.item-left h1{font-size: 67px;
-    margin: 0;
-    line-height: 80px;
-    color: white;
-
+.item-left h1 {
+  font-size: 67px;
+  margin: 0;
+  line-height: 80px;
+  color: white;
 }
-.america{
-    color: chartreuse;
+.america {
+  color: chartreuse;
 }
-.item-left a{ 
-    line-height: 100px;
-    text-decoration: none;
-    color:white;
-    padding: 10px 40px;
-    background-color:#E02C6D ;
-
+.item-left a {
+  line-height: 100px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 40px;
+  background-color: #e02c6d;
 }
-.item-left a i{
-    margin-left: 10px;
+.item-left a i {
+  margin-left: 10px;
 }
-.item-right{
-
+.item-right {
 }
-.item-right img{
-    width: 560px;
-    height: 450px;
+.item-right img {
+  width: 560px;
+  height: auto;
 }
-    /* --------------------
+/* --------------------
         BODY SECTION 
     -------------------------*/
-main{
-    background-color: #F2F2F2;
-    padding: 100px 150px;
-    
+main {
+  background-color: #ffffff;
+  padding: 50px 150px;
 }
-.body-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    
+.body-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
-.card{
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
+.card {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  width: 300px;
+  height: 470px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgb(202, 201, 201);
+}
+.card img {
+  width: 100%;
+}
+.title h2 {
+  color: #18191f;
+}
+.title p {
+  color: #6c6c6c;
+}
+/*-------------------
+    THIRD SECTION  
+-----------------------*/
+.third-section {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 10px #ebd6dd;
+  padding: 20px;
+}
+.left-item {
+  width: 40%;
+}
+.left-item a {
+  padding: 10px 30px;
+  background-color: #e02c6d;
+  text-decoration: none;
+  color: white;
+}
+.third-section,
+h2,
+p {
+  text-align: justify;
+}
+
+.right-item img {
+  width: 520px;
+  height: auto;
+}
+
+/*-------------------
+    FOOTER SECTION 
+ --------------------*/
+.footer-container{
+    padding: 20px;
+    background-color: ;
+
+}
+.logo,.icon,.copy-right{
+    text-align: center;
+}
+.logo img{
     width: 300px;
-    height:470px;
-    padding: 15px;
-    background-color: white;
-    box-shadow: 1px 1px 3px rgb(202, 201, 201) ;
+    height: auto;
+
 }
-.card img{
-    width: 100%;
-    
+.icon{
+    color: teal;
+    font-size: 1.5em;   
 }
-.title h2{
-    color: #18191F;
+.icon > .fab{
+    margin: 5px;
 }
-.title p{
-    color: #6C6C6C;
-}
- 
-        /* --------------------
+
+/* --------------------
             MEDIA QUERIES 
         ------------------------*/
 
-        /*-----------------
+/*-----------------
                 MObile  
         ------------------*/
 
-@media only screen and (max-width:540px){
-    .manu{display: none;
-        
-    }
-    .top-sub-container{
-        padding: 40px;
-        width: 100%;
-        height: 700px;
-    }
-.item{
+@media only screen and (max-width: 768px) {
+  /*------------
+     Header section 
+     -------------------*/
+  .manu {
+    display: none;
+  }
+  .top-sub-container {
+    padding: 20px;
+
+    height: 700px;
+  }
+  .item {
     flex-direction: column;
-    
-}
-.item-left {width: 100%;
+    width: 100%;
+  }
+  .item-left {
+    width: 100%;
     margin-bottom: 50px;
-    
-}
-.item-left h1{
+  }
+  .item-left h1 {
     font-size: 40px;
     line-height: 60px;
-}
-.item-left a{
+  }
+  .item-left a {
     line-height: 50px;
-    margin-bottom:20px ;
+    margin-bottom: 20px;
+  }
+
+  .item-right img {
+    width: 300px;
+    height: auto;
+  }
+
+  /*------------------
+     BOdy Section 
+     ----------------------*/
+  main {
+    padding: 10px;
+  }
+  .body-container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 50px 20px 20px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    width: 100%;
+  }
+  .top-sub-container {
+    display: n;
+  }
+  .body-container {
+    display: ;
+  }
+ /* ------------------
+    THIRD SECTION 
+-------------------------*/
+.third-section{
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+.left-item{
+    width:100%;
+    margin-bottom: 20px;
+}
+.third-section img{
+    width: 90%;
+    height: auto;
 }
 
-.item-right img{
-    width: 330px;
-    height: 300px;
 }
-    
-}
-
