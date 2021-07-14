@@ -11,7 +11,7 @@ body{font-family: 'Poppins', sans-serif;
 
 .top-sub-container{
     padding: 40px 40px 40px 150px ;
-    height: 650px;
+    height: 600px;
     background-color: #2D25A0;
 }
 .manu{
@@ -65,6 +65,9 @@ body{font-family: 'Poppins', sans-serif;
     color: white;
 
 }
+.america{
+    color: chartreuse;
+}
 .item-left a{ 
     line-height: 100px;
     text-decoration: none;
@@ -83,6 +86,50 @@ body{font-family: 'Poppins', sans-serif;
     width: 560px;
     height: 450px;
 }
+    /* --------------------
+        BODY SECTION 
+    -------------------------*/
+main{
+    background-color: #F2F2F2;
+    padding: 100px 150px;
+    
+}
+.body-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    width: 300px;
+    height:470px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(202, 201, 201) ;
+}
+.card img{
+    width: 100%;
+    
+}
+.title h2{
+    color: #18191F;
+}
+.title p{
+    color: #6C6C6C;
+}
+ 
+        /* --------------------
+            MEDIA QUERIES 
+        ------------------------*/
+
+        /*-----------------
+                MObile  
+        ------------------*/
+
 @media only screen and (max-width:540px){
     .manu{display: none;
         
