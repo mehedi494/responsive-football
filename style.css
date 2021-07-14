@@ -120,15 +120,20 @@ main {
     THIRD SECTION  
 -----------------------*/
 .third-section {
-  margin-top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-top: 100px;
+  
   box-shadow: 1px 1px 10px #ebd6dd;
   padding: 20px;
 }
+.third-item{
+  display: flex;
+  
+  justify-content: space-between;
+}
 .left-item {
-  width: 40%;
+  width: 100%;
+  margin-right: 50px;
+ 
 }
 .left-item a {
   padding: 10px 30px;
@@ -137,15 +142,15 @@ main {
   color: white;
 }
 .third-section,
-h2,
-p {
+h2,p {
   text-align: justify;
 }
 
 .right-item img {
-  width: 520px;
+  width: 500px;
   height: auto;
 }
+
 
 /*-------------------
     FOOTER SECTION 
@@ -165,10 +170,13 @@ p {
 }
 .icon{
     color: teal;
-    font-size: 1.5em;   
+    font-size: 1.5em; 
+     
 }
 .icon > .fab{
     margin: 5px;
+    
+    border border-radius: 50% solid red;
 }
 
 /* --------------------
@@ -179,7 +187,7 @@ p {
                 MObile  
         ------------------*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /*------------
      Header section 
      -------------------*/
@@ -261,3 +269,40 @@ p {
 }
 
 }
+/*-------------------
+   Tablet 
+   ------------------*/
+   @media only screen and (max-width: 1279px) and (min-width: 768px)   {
+.manu{
+  display: none;
+}
+    .item{
+      flex-direction: column;
+    }
+    .top-sub-container{
+      height: auto;
+    }
+    main{
+      padding: 50px 50px 50px 40px;
+    }
+    .body-container{
+      grid-template-columns: repeat(2,0fr);
+      justify-content: space-around;
+
+    }
+
+     }
+     
+   }
+
+   /*---------------------
+    Laptop 
+  --------------------------*/
+  @media only screen  and (max-width:1280px){
+    .body-container{grid-template-columns: repeat(2, 0fr);
+    
+  }
+
+    
+    
+  }
