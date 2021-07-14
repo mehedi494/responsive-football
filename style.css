@@ -41,6 +41,29 @@ nav{position: sticky;
   color: white;
   font-weight: 400;
 }
+.element {
+  display: inline-block;
+  background-color: #e6f514f3;
+  border-radius: 25% 10% ;
+  height: 150px;
+  width: 150px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: roll 2s infinite;
+  transform: rotate(30deg);
+  opacity: .5;
+}
+
+@keyframes roll {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .manu-right {
   color: white;
   background-color: #e02c6d;
@@ -151,6 +174,74 @@ h2,p {
   height: auto;
 }
 
+/* ----------------
+fouth SEction 
+----------------------*/
+.image{ display: grid;
+  height: auto;
+  padding: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  box-shadow: 1px 1px 5px rgb(221, 208, 208);
+ 
+
+}
+.image img{
+  width: 100%;
+}
+.h2{
+  background-color: rgba(95, 158, 160, 0.404);
+  font-size: 40px;
+  color: #0d1642;
+  text-align: center;
+  border-radius: 20px 0px 20px 0px;
+}
+
+/*------------ 
+  FIth section 
+-----------------*/
+.ronaldo-container{
+  pa
+  height: 300px;
+  background-image: url(images/btFgMw.png);
+  background-size: cover;
+
+}
+.ronaldo .p{
+  
+
+}
+.ronaldo{
+
+  padding: 50px;
+  text-align: center;
+
+}
+.ronaldo h1{
+  border: 5px dotted black;
+  background-color: rgba(32, 29, 29, 0.315);
+  color: #57f10f;
+  font-size: 40px;
+  padding: 0;
+  margin:0 ;
+  text-align: center;
+
+}
+.ronaldo .p{
+  background-color: rgba(26, 9, 43, 0.486);
+  color: rgb(219, 230, 230);
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.ronaldo a{
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: brown;
+  line-height: 70px;
+ 
+}
 
 /*-------------------
     FOOTER SECTION 
@@ -175,7 +266,6 @@ h2,p {
 }
 .icon > .fab{
     margin: 5px;
-    
     border border-radius: 50% solid red;
 }
 
@@ -215,6 +305,11 @@ h2,p {
     line-height: 50px;
     margin-bottom: 20px;
   }
+  .element{
+    margin: 20px 0 20px 0;
+    width: 50px;
+    height: 50px;
+  }
 
   .item-right img {
     width: 300px;
@@ -229,7 +324,7 @@ h2,p {
   }
   .body-container {
     grid-template-columns: repeat(1, 1fr);
-    margin: 20px 50px 20px 20px;
+    margin: 20px 20px 20px 20px;
   }
   .card {
     width: 100%;
@@ -248,58 +343,51 @@ h2,p {
   .top-sub-container {
     display: n;
   }
-  .body-container {
-    display: ;
-  }
+  
  /* ------------------
     THIRD SECTION 
 -------------------------*/
-.third-section{
-    flex-direction: column;
-    margin-top: 50px;
 
+.third-item{
+  flex-direction: column;
 }
 .left-item{
     width:100%;
+    
     margin-bottom: 20px;
 }
+
 .third-section img{
-    width: 90%;
+    width: 100%;
     height: auto;
 }
 
-}
 /*-------------------
    Tablet 
    ------------------*/
-   @media only screen and (max-width: 1279px) and (min-width: 768px)   {
-.manu{
-  display: none;
-}
+   @media only screen and (min-width: 768px) {
+     .element{
+       display: ;
+     }
+
     .item{
       flex-direction: column;
     }
-    .top-sub-container{
-      height: auto;
-    }
+    
     main{
       padding: 50px 50px 50px 40px;
     }
     .body-container{
-      grid-template-columns: repeat(2,0fr);
-      justify-content: space-around;
-
-    }
-
-     }
+      grid-template-columns: repeat(2, 1px);
+    
      
    }
 
    /*---------------------
     Laptop 
   --------------------------*/
-  @media only screen  and (max-width:1280px){
-    .body-container{grid-template-columns: repeat(2, 0fr);
+  @media only screen  and (min-width:1279px){
+    .body-container{grid-template-columns: repeat(3, 1fr);
     
   }
 
