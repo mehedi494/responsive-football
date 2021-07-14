@@ -182,7 +182,7 @@ fouth SEction
   padding: 5px;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  box-shadow: 1px 1px 5px rgb(221, 208, 208);
+  box-shadow: 1px 2px 5px rgb(221, 208, 208);
  
 
 }
